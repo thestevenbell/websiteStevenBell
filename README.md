@@ -1,10 +1,13 @@
 ---
-title: Use Bourbon Neat Sass and Jade with Gulp for efficient Web Development.
-
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2016-02-20 15:57:35 -0500
+categories: jekyll markdown sass gulp grunt scss css html5 jade bourbon neat
 ---
 
+
 #Use Bourbon Neat Sass and Jade with Gulp for efficent Web Development.
-- [Project Repo]
+- [Project Repo](https://github.com/thestevenbell/staticWebTemplate-bourbon-neat-jade-sass-browersync)
 
 This repo contains all of the elements needed to begin development on a static web site
 using the power of the gulp task runner with LiveReload, Jade and Bourbon with Neat.
@@ -49,6 +52,7 @@ are includedm namely the header elements for cross browser support and normalize
     $ `gulp serve` <-- use this command to start gulp services.  This will automatically
     open the localhost and precompile SASS and Jade assets on save.
 
+- work within the index-content.jade file adding imported files if needed.
 
 - The following steps were used to create the file contents of this repo:
 

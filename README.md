@@ -1,3 +1,8 @@
+---
+title: Use Bourbon Neat Sass and Jade with Gulp for efficient Web Development.
+
+---
+
 #Use Bourbon Neat Sass and Jade with Gulp for efficent Web Development.
 - [Project Repo]
 
@@ -101,3 +106,4 @@ initiate only the precompilers independently.
 
 #####Made by [Steven Bell](http://thestevenbell.github.io/)
 #####[Steven's GitHub ](https://github.com/thestevenbell)
+blog hosted by GitHub, powered by [Jekyll]()

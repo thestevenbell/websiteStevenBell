@@ -1,0 +1,129 @@
+@import "../bourbon/bourbon";
+@import "../neat/neat";
+@import "_accordion";
+@import "_text";
+
+//###########################################################################
+//STYLING FOR DOC MAIN
+//###########################################################################
+.image{
+  line-height: 0;
+  width: 100%;
+  height: 10em;
+  background-image: url("../../img/dark_embroidery.png");
+  background-repeat: repeat;
+}
+
+.mainContainer {
+    @include outer-container;
+    height: 600px;
+}
+
+.title {
+
+}
+
+.menuDrop {
+    margin: 0 auto;
+}
+
+.leftAside {
+        @include span-columns(3);
+        height: 80%;
+        background-color: rgba(198, 203, 204, 0.5);
+}
+
+.rightAside {
+    @include span-columns(9);
+    @include omega();
+    background-color: rgba(198, 203, 204, 0.5);
+    height: 80%;
+    padding-left: 2%;
+}
+
+.accordion {
+    margin: 0 auto;
+        background-color: rgba(198, 203, 204, 0.8);
+}
+
+
+h1{
+    color: darkgrey;
+    font-family: 'Abril Fatface', serif;
+    font-size: 4em;
+}
+
+h2 {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+}
+
+a {
+    font-family: 'Josefin Slab', serif;
+}
+
+
+
+//###########################################################################
+//REMOVES STYLES INCOMPATABLE WITH PRINTING
+//###########################################################################
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+

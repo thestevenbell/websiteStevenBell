@@ -1,0 +1,40 @@
+{
+  "name": "steven_bell_web_developer_portfolio",
+  "version": "1.0.0",
+  "description": "Personal website and portfolio for Steven Bell, Atlanta, Georgia based full stack web developer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "developer",
+    "portfolio",
+    "design",
+    "MEAN",
+    "javascript",
+    "rails",
+    "ruby",
+    "node",
+    "npm",
+    "css",
+    "html"
+  ],
+  "author": "Steven Bell",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-util": "^3.0.7",
+    "livereload": "^0.4.1",
+    "node-bourbon": "^4.2.3",
+    "node-neat": "^1.7.2"
+  },
+  "dependencies": {
+    "bourbon": "^4.2.6",
+    "jade": "^1.11.0"
+  }
+}

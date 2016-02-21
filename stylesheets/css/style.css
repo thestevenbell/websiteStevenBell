@@ -293,6 +293,24 @@ article.type-system-geometric {
   #resume:last-child {
     margin-right: 0; }
 
+#resumeModal {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  #resumeModal:last-child {
+    margin-right: 0; }
+
+#resume > a > h4,
+#resume > div > label > div > h4 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  #resume > a > h4:last-child,
+  #resume > div > label > div > h4:last-child {
+    margin-right: 0; }
+
 #contact {
   float: left;
   display: block;
@@ -340,7 +358,7 @@ article.type-system-geometric {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
   padding-top: 0.6em;
   text-align: left;
@@ -404,17 +422,18 @@ article.type-system-geometric {
   position: relative;
   width: 95%;
   height: 720px; }
-  @media screen and (min-width: 40em) {
-    .modal .modal-inner {
-      max-height: 95%;
-      padding: 3em;
-      width: 90%; } }
   @media screen and (min-width: 53.75em) {
     .modal .modal-inner {
       width: 80%; } }
-  .modal .modal-inner h1 {
-    color: #333;
-    text-align: left; }
+  @media screen and (min-width: 100px) and (max-width: 765px) {
+    .modal .modal-inner {
+      max-height: 100%;
+      height: 600px;
+      width: 90%; } }
+  .modal .modal-inner h3 {
+    color: darkgrey;
+    text-align: left;
+    font-weight: 700; }
   .modal .modal-inner p {
     color: #333;
     line-height: 1.5em; }
@@ -427,6 +446,34 @@ article.type-system-geometric {
         -webkit-columns: 5 8em;
         -moz-columns: 5 8em;
         columns: 5 8em; } }
+  .modal .modal-inner .modal-leftCol {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 12.64237%;
+    height: 100%;
+    width: 25%; }
+    .modal .modal-inner .modal-leftCol:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 100px) and (max-width: 765px) {
+      .modal .modal-inner .modal-leftCol {
+        max-height: 40%;
+        width: 90%; } }
+  .modal .modal-inner .modal-rightCol {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 65.05695%;
+    margin-right: 0;
+    border: 1px black solid;
+    height: 100%;
+    width: 70%; }
+    .modal .modal-inner .modal-rightCol:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 100px) and (max-width: 765px) {
+      .modal .modal-inner .modal-rightCol {
+        max-height: 60%;
+        width: 90%; } }
   .modal .modal-inner a.cta {
     color: #fff;
     display: inline-block;

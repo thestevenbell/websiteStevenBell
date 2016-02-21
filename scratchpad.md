@@ -21,3 +21,18 @@ div.menuDrop
     margin: 0 auto;
     background-color: rgba(198, 203, 204, 0.8);
 }
+
+
+
+/// Modal
+
+  //- div.modal
+  //-   label(for="modal-1")
+  //-     div.modal-trigger Click for Modal
+  //-   input(type="checkbox").modal-state#modal-1
+  //-   div.modal-fade-screen
+  //-     div.modal-inner
+  //-       div(for="modal-1").modal-close
+  //-       h1 Resume
+  //-       p.modal-intro  Modal text
+  //-       p.modal-content Body text

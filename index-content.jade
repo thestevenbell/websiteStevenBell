@@ -23,12 +23,11 @@ div.mainContainer
         div.modal-fade-screen
           div.modal-inner
             div(for="modal-1").modal-close
-            h5 Modal Title
-            p.modal-intro  Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo mo
-            p.modal-content Body text lorem ipsum dolo
-
-
-
+            div.modal-leftCol
+              h3 Modal Title
+              p.modal-intro  Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo mo
+              p.modal-content Body text lorem ipsum dolo
+            div.modal-rightCol
     div#folio2
       div.webFolio
     div#folio3
@@ -42,18 +41,20 @@ div.mainContainer
     div#folio3
       div.webFolio
   div#resume
-    h4 resume
+    h4 Resume:
+    div.modal#resumeModal
+      label(for="modal-7")
+        div
+          h4.modal-trigger view
+      input(type="checkbox").modal-state#modal-7
+      div.modal-fade-screen
+        div.modal-inner
+          div(for="modal-7").modal-close
+          h3 Resume
+          p.modal-intro  Modal text
+          p.modal-content Body text
+    a(href="./img/yourfile.pdf" download="StevenBellWebDevResume.pdf")
+      h4 download
   div#contact
-  div.modal
-    label(for="modal-1")
-      div.modal-trigger Click for Modal
-    input(type="checkbox").modal-state#modal-1
-    div.modal-fade-screen
-      div.modal-inner
-        div(for="modal-1").modal-close
-        h1 Modal Title
-        p.modal-intro  Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo mo
-        p.modal-content Body text lorem ipsum dolo
-
 
 

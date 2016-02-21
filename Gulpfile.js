@@ -30,10 +30,6 @@ gulp.task('browser-sync', function () {
 });
 
 gulp.task('serve', ['styles', 'jade'], function() {
-
-//    browserSync.init({
-//        server: "./"
-//    });
   var files = [
       '/*.html',
       'stylesheets/css/*.css',
@@ -49,7 +45,6 @@ gulp.task('serve', ['styles', 'jade'], function() {
       }
    });
 
-
     gulp.watch("stylesheets/*.scss", ['styles']);
     gulp.watch("/*.jade", ['jade']);
     gulp.watch("/*.html").on('change', browserSync.reload);
@@ -64,7 +59,6 @@ gulp.task('styles', function () {
             errLogToConsole: true
         }))
         .pipe(gulp.dest('./stylesheets/css'))
-        .pipe(livereload());
 });
 
 // create a TASK to compile Jade to HTML using gulp-jade
@@ -81,7 +75,8 @@ gulp.task('jade', function() {
 // create a TASK to WATCH for changes in your files
 // this will "watch" for any changes in your files and rerun gulp if necessary
 gulp.task('watch', function() {
-   //livereload.listen();
+
+   gulp.watch(['./*.html'], ['jade']);
    gulp.watch(['./*.jade'], ['jade']); //first arg is the dir to watch, 2nd is the task
    gulp.watch(['./stylesheets/*.scss'], ['styles']);
 });

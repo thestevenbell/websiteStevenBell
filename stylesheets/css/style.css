@@ -133,7 +133,6 @@ article.type-system-geometric {
     font-family: "Questrial", sans-serif; }
 
 .image {
-  line-height: 0;
   width: 100%;
   height: 10em;
   background-image: url("../../img/dark_embroidery.png");
@@ -149,46 +148,354 @@ article.type-system-geometric {
     content: "";
     display: table; }
 
-.menuDrop {
-  margin: 0 auto; }
-
 .leftAside {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
+  width: 65.88078%;
   height: 80%;
-  background-color: rgba(198, 203, 204, 0.5); }
+  background-color: rgba(198, 203, 204, 0.5);
+  padding-left: 4%;
+  padding-top: 4%;
+  margin-bottom: 3%; }
   .leftAside:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 100px) and (max-width: 600px) {
+    .leftAside {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      float: none;
+      height: 300px;
+      margin-right: 0;
+      margin-left: 0;
+      margin-right: 0; }
+      .leftAside:last-child {
+        margin-right: 0; } }
 
 .rightAside {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 74.41059%;
+  width: 31.76157%;
   margin-right: 0;
   background-color: rgba(198, 203, 204, 0.5);
   height: 80%;
-  padding-left: 2%; }
+  padding-left: 2%;
+  margin-bottom: 3%; }
   .rightAside:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 100px) and (max-width: 600px) {
+    .rightAside {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      height: 50%; }
+      .rightAside:last-child {
+        margin-right: 0; } }
 
-.accordion {
-  margin: 0 auto;
-  background-color: rgba(198, 203, 204, 0.8); }
+.webDevOuter {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 3%;
+  height: 74%;
+  background-color: rgba(198, 203, 204, 0.5);
+  padding-left: 4%;
+  padding-top: 2%; }
+  .webDevOuter:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 100px) and (max-width: 765px) {
+    .webDevOuter {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      height: 945px;
+      padding-left: none; }
+      .webDevOuter:last-child {
+        margin-right: 0; } }
+
+.webFolio {
+  height: 240px;
+  width: 240px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-right: auto;
+  margin-left: auto; }
+
+#folio1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  padding: 2.35765%;
+  margin-top: 0; }
+  #folio1:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 100px) and (max-width: 765px) {
+    #folio1 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      #folio1:last-child {
+        margin-right: 0; } }
+
+#folio2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  padding: 2.35765%;
+  margin-top: 0; }
+  #folio2:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 100px) and (max-width: 765px) {
+    #folio2 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      #folio2:last-child {
+        margin-right: 0; } }
+
+#folio3 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  padding: 2.35765%;
+  margin-top: 0; }
+  #folio3:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 100px) and (max-width: 765px) {
+    #folio3 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      #folio3:last-child {
+        margin-right: 0; } }
+
+#resume {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 3%;
+  height: 30%;
+  background-color: rgba(198, 203, 204, 0.5);
+  padding-left: 4%;
+  padding-top: 2%; }
+  #resume:last-child {
+    margin-right: 0; }
+
+#contact {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 3%;
+  height: 74%;
+  background-color: rgba(198, 203, 204, 0.5);
+  padding-left: 4%;
+  padding-top: 2%; }
+  #contact:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 100px) and (max-width: 765px) {
+    #contact {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      height: 945px;
+      padding-left: none; }
+      #contact:last-child {
+        margin-right: 0; } }
+
+.modal label {
+  cursor: pointer;
+  margin-bottom: 0; }
+
+.modal label img {
+  border-radius: 40%;
+  display: block;
+  max-width: 80%; }
+
+.modal .modal-state {
+  display: none; }
+
+.modal .modal-trigger {
+  padding: 0.8em 1em; }
+
+.modal .modal-fade-screen {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  padding-top: 0.6em;
+  text-align: left;
+  visibility: hidden;
+  z-index: 99999999999; }
+  @media screen and (min-width: 53.75em) {
+    .modal .modal-fade-screen {
+      padding-top: 1em; } }
+  .modal .modal-fade-screen .modal-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer; }
+
+.modal .modal-close {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  height: 1.5em;
+  width: 1.5em;
+  background: #fff;
+  cursor: pointer; }
+  .modal .modal-close:after, .modal .modal-close:before {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 1.5em;
+    width: 0.15em;
+    background: #ddd;
+    content: '';
+    display: block;
+    margin: -3px 0 0 -1px; }
+  .modal .modal-close:hover:after, .modal .modal-close:hover:before {
+    background: #c4c4c4; }
+  .modal .modal-close:before {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+
+.modal .modal-inner {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  background: #fff;
+  border-radius: 0;
+  margin-top: 0;
+  margin: auto;
+  overflow: auto;
+  padding: 1.5em;
+  position: relative;
+  width: 95%;
+  height: 720px; }
+  @media screen and (min-width: 40em) {
+    .modal .modal-inner {
+      max-height: 95%;
+      padding: 3em;
+      width: 90%; } }
+  @media screen and (min-width: 53.75em) {
+    .modal .modal-inner {
+      width: 80%; } }
+  .modal .modal-inner h1 {
+    color: #333;
+    text-align: left; }
+  .modal .modal-inner p {
+    color: #333;
+    line-height: 1.5em; }
+  .modal .modal-inner .modal-intro {
+    margin-bottom: 1em; }
+  .modal .modal-inner .modal-content {
+    color: #333; }
+    @media screen and (min-width: 40em) {
+      .modal .modal-inner .modal-content {
+        -webkit-columns: 5 8em;
+        -moz-columns: 5 8em;
+        columns: 5 8em; } }
+  .modal .modal-inner a.cta {
+    color: #fff;
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-top: 1em; }
+    .modal .modal-inner a.cta:last-child {
+      padding: 0 2em; }
+
+.modal .modal-state:checked + .modal-fade-screen {
+  opacity: 1;
+  visibility: visible; }
+
+.modal .modal-state:checked + .modal-fade-screen .modal-inner {
+  top: 0.5em; }
+
+.modal-open {
+  overflow: hidden; }
 
 h1 {
-  color: darkgrey;
-  font-family: 'Abril Fatface', serif;
-  font-size: 4em; }
+  color: black;
+  font-family: 'Josefin Slab', serif;
+  font-weight: 400;
+  font-size: 5em;
+  word-wrap: break-word;
+  white-space: normal;
+  margin-bottom: 30px; }
+  @media screen and (min-width: 100px) and (max-width: 500px) {
+    h1 {
+      font-size: 4em; } }
 
 h2 {
-  font-family: 'Josefin Slab', serif;
-  font-weight: 700; }
+  font-family: 'Josefin Sans', serif;
+  font-weight: 700;
+  word-wrap: break-word;
+  color: darkgrey;
+  font-size: 1.75em; }
+
+h3 {
+  font-family: JosefinSlab-Light;
+  font-size: 2em;
+  font-weight: 400;
+  color: #020202;
+  letter-spacing: 4.11px;
+  line-height: 28px;
+  word-wrap: break-word; }
+  @media screen and (min-width: 100px) and (max-width: 600px) {
+    h3 {
+      font-size: 1em; } }
+
+h4 {
+  font-family: JosefinSlab-Light;
+  font-size: 2em;
+  font-weight: 400;
+  color: #020202;
+  letter-spacing: 4.11px;
+  line-height: 36px;
+  word-wrap: break-word; }
 
 a {
-  font-family: 'Josefin Slab', serif; }
+  font-family: 'Josefin Slab', serif;
+  color: black;
+  text-decoration: none; }
+
+a:hover {
+  color: darkgrey; }
+
+p {
+  font-family: 'Josefin Sans', serif;
+  font-weight: 400; }
 
 @media print {
   *,

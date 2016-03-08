@@ -6,6 +6,14 @@ categories: jekyll markdown sass gulp grunt scss css html5 jade bourbon neat
 ---
 
 
+##Todo:
+- fix resolution of resume with png
+-fix height of the resume with png
+
+
+
+
+
 #Use Bourbon Neat Sass and Jade with Gulp for efficent Web Development.
 - [Project Repo](https://github.com/thestevenbell/staticWebTemplate-bourbon-neat-jade-sass-browersync)
 

@@ -36,3 +36,21 @@ div.menuDrop
   //-       h1 Resume
   //-       p.modal-intro  Modal text
   //-       p.modal-content Body text
+
+//Modal
+
+  div#resume
+    h4 Resume:
+    div.modal#resumeModal
+      label(for="modal-7")
+        div
+          h4.modal-trigger view
+      input(type="checkbox").modal-state#modal-7
+      div.modal-fade-screen
+        div.modal-inner
+          div(for="modal-7").modal-close
+          h3 Resume
+          p.modal-intro  Modal text
+          p.modal-content Body text
+    a(href="./img/yourfile.pdf" download="StevenBellWebDevResume.pdf")
+      h4 download

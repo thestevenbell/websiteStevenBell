@@ -10,9 +10,18 @@ div.mainContainer
     h3
       a(href="#landDesign") design portfolio
     h3
-      a(href="#resume") resume
-    h3
       a(href="#contact") contact
+    div.modal
+      div
+        label(for="modal-7")
+          h3.modal-trigger#resumeModal resume
+        input(type="checkbox").modal-state#modal-7
+        div.modal-fade-screen
+          div.modal-inner.resumeModalInner
+            div(for="modal-7").modal-close
+            a(href="./img/StevenBellWebDevResume.pdf" download="StevenBellWebDevResume.pdf")
+              h3 Download Steven's Resume
+            div.resumePDF
   div.webDevOuter#webDesign
     h3 web development portfolio
     div#folio1
@@ -40,21 +49,21 @@ div.mainContainer
       div.webFolio
     div#folio3
       div.webFolio
-  div#resume
-    h4 Resume:
-    div.modal#resumeModal
-      label(for="modal-7")
-        div
-          h4.modal-trigger view
-      input(type="checkbox").modal-state#modal-7
-      div.modal-fade-screen
-        div.modal-inner
-          div(for="modal-7").modal-close
-          h3 Resume
-          p.modal-intro  Modal text
-          p.modal-content Body text
-    a(href="./img/yourfile.pdf" download="StevenBellWebDevResume.pdf")
-      h4 download
   div#contact
-
+    div#contactLeft
+      h3 get in touch
+    div#contactRight
+      div.contactRightInner
+        a(href="mailto:thestevenbell@gmail.com")
+          h2 thestevenbell@gmail.com
+        a(href="https://www.linkedin.com/in/thestevenbell")
+          h2 linkedin.com/in/thestevenbell
+        a(href="https://thestevenbell.github.io")
+          h2 thestevenbell.github.io
+        a(href="http://gittrack.io/thestevenbell")
+          h2 gittrack.io/thestevenbell
+        a(href="https://twitter.com/cropcommand")
+         h2 twitter.com/cropcommand
+        a(href="https://www.instagram.com/sporebandit/")
+         h2 instagram.com/sporebandit
 

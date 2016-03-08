@@ -280,59 +280,102 @@ article.type-system-geometric {
       #folio3:last-child {
         margin-right: 0; } }
 
-#resume {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  margin-bottom: 3%;
-  height: 30%;
-  background-color: rgba(198, 203, 204, 0.5);
-  padding-left: 4%;
-  padding-top: 2%; }
-  #resume:last-child {
-    margin-right: 0; }
-
-#resumeModal {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 14.70196%; }
-  #resumeModal:last-child {
-    margin-right: 0; }
-
-#resume > a > h4,
-#resume > div > label > div > h4 {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 14.70196%; }
-  #resume > a > h4:last-child,
-  #resume > div > label > div > h4:last-child {
-    margin-right: 0; }
-
 #contact {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 3%;
-  height: 74%;
+  height: 75%;
   background-color: rgba(198, 203, 204, 0.5);
   padding-left: 4%;
   padding-top: 2%; }
   #contact:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 100px) and (max-width: 765px) {
+  #contact::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (min-width: 100px) and (max-width: 600px) {
     #contact {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%;
-      height: 945px;
+      height: 320px;
       padding-left: none; }
       #contact:last-child {
         margin-right: 0; } }
+
+#contactLeft {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  #contactLeft:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 100px) and (max-width: 600px) {
+    #contactLeft {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      float: none;
+      height: 40px;
+      margin-right: 0;
+      margin-left: 0;
+      margin-right: 0; }
+      #contactLeft:last-child {
+        margin-right: 0; } }
+
+#contactRight {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%; }
+  #contactRight:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 100px) and (max-width: 600px) {
+    #contactRight {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      float: none;
+      height: 200px;
+      margin-right: 0;
+      margin-left: 0;
+      margin-right: 0; }
+      #contactRight:last-child {
+        margin-right: 0; } }
+
+.contactRightInner {
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 100%; }
+  .contactRightInner:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 100px) and (max-width: 600px) {
+    .contactRightInner {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      float: none;
+      height: 200px;
+      margin-right: 0;
+      margin-left: 0;
+      margin-right: 0; }
+      .contactRightInner:last-child {
+        margin-right: 0; } }
+
+@media screen and (min-width: 100px) and (max-width: 600px) {
+  #contactRight > div > a > h2 {
+    font-size: 1em; } }
 
 .modal label {
   cursor: pointer;
@@ -417,18 +460,15 @@ article.type-system-geometric {
   border-radius: 0;
   margin-top: 0;
   margin: auto;
-  overflow: auto;
+  overflow: scroll;
   padding: 1.5em;
   position: relative;
   width: 95%;
-  height: 720px; }
-  @media screen and (min-width: 53.75em) {
-    .modal .modal-inner {
-      width: 80%; } }
+  height: 100%; }
   @media screen and (min-width: 100px) and (max-width: 765px) {
     .modal .modal-inner {
       max-height: 100%;
-      height: 600px;
+      height: 100%;
       width: 90%; } }
   .modal .modal-inner h3 {
     color: darkgrey;
@@ -491,6 +531,53 @@ article.type-system-geometric {
 
 .modal-open {
   overflow: hidden; }
+
+#resume {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 3%;
+  height: 30%;
+  background-color: rgba(198, 203, 204, 0.5);
+  padding-left: 4%;
+  padding-top: 2%; }
+  #resume:last-child {
+    margin-right: 0; }
+
+#resumeModal {
+  padding: 0; }
+  #resumeModal h3 {
+    font-family: JosefinSlab-Light;
+    font-size: 2em;
+    font-weight: 400;
+    color: #020202;
+    letter-spacing: 4.11px;
+    line-height: 28px;
+    word-wrap: break-word; }
+    @media screen and (min-width: 100px) and (max-width: 600px) {
+      #resumeModal h3 {
+        font-size: 1em; } }
+
+.resumeModalInner {
+  height: 3000px;
+  overflow: scroll; }
+  @media screen and (min-width: 100px) and (max-width: 765px) {
+    .resumeModalInner {
+      height: 3000px;
+      width: 100%; } }
+
+.resumePDF {
+  background-image: url("../../img/Resume_Steven_Bell_WebDeveloper_20160308.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: scroll;
+  height: 2000px;
+  width: 100%; }
+  @media screen and (min-width: 100px) and (max-width: 765px) {
+    .resumePDF {
+      height: 800px;
+      width: 100%; } }
 
 h1 {
   color: black;

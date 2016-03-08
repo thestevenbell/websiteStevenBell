@@ -7,8 +7,22 @@
   <div class="rightAside">
     <h3><a href="#webDesign">web dev portfolio</a></h3>
     <h3><a href="#landDesign">design portfolio</a></h3>
-    <h3><a href="#resume">resume</a></h3>
     <h3><a href="#contact">contact</a></h3>
+    <div class="modal">
+      <div>
+        <label for="modal-7">
+          <h3 id="resumeModal" class="modal-trigger">resume</h3>
+        </label>
+        <input type="checkbox" id="modal-7" class="modal-state">
+        <div class="modal-fade-screen">
+          <div class="modal-inner resumeModalInner">
+            <div for="modal-7" class="modal-close"></div><a href="./img/StevenBellWebDevResume.pdf" download="StevenBellWebDevResume.pdf">
+              <h3>Download Steven's Resume</h3></a>
+            <div class="resumePDF"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div id="webDesign" class="webDevOuter">
     <h3>web development portfolio</h3>
@@ -50,25 +64,18 @@
       <div class="webFolio"></div>
     </div>
   </div>
-  <div id="resume">
-    <h4>Resume:</h4>
-    <div id="resumeModal" class="modal">
-      <label for="modal-7">
-        <div>
-          <h4 class="modal-trigger">view</h4>
-        </div>
-      </label>
-      <input type="checkbox" id="modal-7" class="modal-state">
-      <div class="modal-fade-screen">
-        <div class="modal-inner">
-          <div for="modal-7" class="modal-close"></div>
-          <h3>Resume</h3>
-          <p class="modal-intro"> Modal text</p>
-          <p class="modal-content">Body text</p>
-        </div>
-      </div>
-    </div><a href="./img/yourfile.pdf" download="StevenBellWebDevResume.pdf">
-      <h4>download</h4></a>
+  <div id="contact">
+    <div id="contactLeft">
+      <h3>get in touch</h3>
+    </div>
+    <div id="contactRight">
+      <div class="contactRightInner"><a href="mailto:thestevenbell@gmail.com">
+          <h2>thestevenbell@gmail.com</h2></a><a href="https://www.linkedin.com/in/thestevenbell">
+          <h2>linkedin.com/in/thestevenbell</h2></a><a href="https://thestevenbell.github.io">
+          <h2>thestevenbell.github.io</h2></a><a href="http://gittrack.io/thestevenbell">
+          <h2>gittrack.io/thestevenbell</h2></a><a href="https://twitter.com/cropcommand">
+          <h2>twitter.com/cropcommand</h2></a><a href="https://www.instagram.com/sporebandit/">
+          <h2>instagram.com/sporebandit</h2></a></div>
+    </div>
   </div>
-  <div id="contact"></div>
 </div>
